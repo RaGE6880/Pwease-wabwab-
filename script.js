@@ -44,11 +44,14 @@ function sayYes() {
   cat.style.display = "block";
   cat.src = yesCatImages[0];
 
-  confetti({
-    particleCount: 150,
-    spread: 70,
-    origin: { y: 0.6 }
-  });
+  // confetti
+  if (typeof confetti === "function") {
+    confetti({
+      particleCount: 150,
+      spread: 70,
+      origin: { y: 0.6 }
+    });
+  }
 
   // hide buttons
   document.querySelector(".yes").style.display = "none";
@@ -71,7 +74,7 @@ function sayNo() {
     questions[Math.min(noCount, questions.length - 1)];
 }
 
-// YOU will edit this link later
+// YOU will edit this link
 function messageMe() {
-  window.location.href = "https://www.facebook.com/bagoncia.cedric.d";
+  window.location.href = "PASTE_YOUR_LINK_HERE";
 }
