@@ -49,7 +49,7 @@ function sayYes() {
     confetti({
       particleCount: 150,
       spread: 70,
-      origin: { y: 0.6 }
+      origin: { x: 0.5, y: 0.6 }
     });
   }
 
